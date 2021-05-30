@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> 
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Home</title>
+</head>
+<body>
+    <header><%- include('./partials/__header.ejs')%></header>
+    <div class="page-banner">
+        <h2 class="text-center post-title"> Why you should challenge yourself</h2>
+        <ul class="banner-links">
+        <li>Published at: </li>
+        <li>Author: </li>
+        <li>Category: </li>
+        </ul>
+    </div>
+    <main  class="post-page p-10">
+        <div class="row">
+            <div class="col-lg-2">
+                <div>
+                    <h3 class="text-center"> Category </h3>
+                    <ul>
+                        <li><a href=""> Culture</a> </li>
+                        <li><a href=""> Societe </a> </li>
+                        <li><a href=""> Leadership</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-centered">Publicite</h3>
+                    <p class="text-justify"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum aut perferendis dolorum autem facilis inventore sed voluptates ad nihil libero, at odio nobis obcaecati est aperiam nesciunt, voluptatibus, aliquid perspiciatis.</p>
+                    <p class="text-justify">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam in repudiandae deserunt nobis tempore est, quasi, consectetur amet labore ipsa molestias voluptatibus aperiam, unde cumque tempora totam numquam veritatis asperiores.</p>
+                </div>
+            </div>
+            <div class="col-lg-8" >
+                <div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae recusandae repellendus delectus eligendi nihil pariatur tempore repudiandae ratione consectetur omnis quaerat, totam natus illo dignissimos fugiat, incidunt at esse unde! </p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae recusandae repellendus delectus eligendi nihil pariatur tempore repudiandae ratione consectetur omnis quaerat, totam natus illo dignissimos fugiat, incidunt at esse unde! </p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae recusandae repellendus delectus eligendi nihil pariatur tempore repudiandae ratione consectetur omnis quaerat, totam natus illo dignissimos fugiat, incidunt at esse unde! </p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae recusandae repellendus delectus eligendi nihil pariatur tempore repudiandae ratione consectetur omnis quaerat, totam natus illo dignissimos fugiat, incidunt at esse unde! </p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae recusandae repellendus delectus eligendi nihil pariatur tempore repudiandae ratione consectetur omnis quaerat, totam natus illo dignissimos fugiat, incidunt at esse unde! </p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae recusandae repellendus delectus eligendi nihil pariatur tempore repudiandae ratione consectetur omnis quaerat, totam natus illo dignissimos fugiat, incidunt at esse unde! </p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae recusandae repellendus delectus eligendi nihil pariatur tempore repudiandae ratione consectetur omnis quaerat, totam natus illo dignissimos fugiat, incidunt at esse unde! </p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae recusandae repellendus delectus eligendi nihil pariatur tempore repudiandae ratione consectetur omnis quaerat, totam natus illo dignissimos fugiat, incidunt at esse unde! </p>
+
+                </div>
+                <div class="comment-section">
+                    <h3 class="text-center">Add a Comment</h3>
+                    <%- include('./partials/__addcomment.ejs') %>
+                </div>
+                <div class="comment-list"></div>
+            </div>
+            <div class="col-lg-2" >
+                <div>
+                    <h3 class="text-center">Share</h3>
+                    <ul class="share">
+                        <li><a href=""><i class="fab fa-facebook"></i></a></li>
+                        <li><a href=""><i class="fab fa-twitter-square"></i></a> </li>
+                        <li><a href=""><i class="fas fa-envelope-square"></i></a> </li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-center">Recents Posts</h3>
+                    <ul>
+                        <li><a href="">post 1</a> </li>
+                        <li><a href="">post 1</a> </li>
+                        <li><a href="">post 1</a> </li>
+                        <li><a href="">post 1</a> </li>
+                        <li><a href="">post 1</a> </li>
+                        <li><a href="">post 1</a> </li>
+                        <li><a href="">post 1</a> </li>
+                        <li><a href="">post 1</a> </li>
+                        <li><a href="">post 1</a> </li>
+                        <li><a href="">post 1</a> </li>
+                        <li><a href="">post 1</a> </li>
+
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-center">Publicite</h3>
+                    <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum repellat odit ducimus quis commodi nobis aperiam officiis? Unde minus eligendi, culpa suscipit maiores, labore perspiciatis cupiditate hic placeat ducimus deserunt. </p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer><%- include('./partials/__footer.ejs') %></footer>
+<script src="/js/app.js"></script>
+</body>
+</html>

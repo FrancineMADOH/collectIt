@@ -1,0 +1,79 @@
+body{
+    font-family: 'Raleway', sans-serif;
+}
+
+/*styling the header*/
+nav{
+    background-color: #a389ad;
+    color: #fff;
+    font-weight: 600;
+}
+/* the body */
+.custom{
+    background-color: #a389ad;
+    color: white;
+}
+h3{
+    color: #a389ad;
+    font-weight: bold;
+}
+main{
+    margin:0 auto;
+    padding:10px;
+}
+.card-title{
+    color:#a389ad ;
+    font-weight: bold;
+}
+/*styling the footer*/
+footer{
+    background-color:#a389ad ;
+    color: #fff;
+    font-weight: 600;
+    padding: 5px;
+    max-width: 100%;
+}
+footer ul{
+    display: flex;
+    list-style-type: none; 
+    justify-content:center;   
+}
+footer li{
+    margin: 40px 20px 0 0;
+}
+footer a{
+    color: #fff;
+}
+i{
+    font-size: 20px;
+}
+.post-card{
+    margin: 20px
+}
+.share{
+    display: flex;
+    list-style-type: none; 
+    justify-content:space-between;
+}
+.banner-links{
+    display: flex;
+    color: #fff;
+    font-size: 1rem;
+    justify-content: space-around;
+    list-style-type: none;
+    text-align: end;
+}
+.page-banner{
+    background-image:linear-gradient(#fff,#a389ad);
+    height: 300px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+    padding-top: 40px;
+    
+}
+.post-title{
+    font-size: 1.9rem;
+    font-weight: bold;
+    color: #fff;
+}

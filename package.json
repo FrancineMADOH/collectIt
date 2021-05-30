@@ -4,7 +4,7 @@
   "description": "a magazine about society,leadership and culture",
   "main": "index.js",
   "scripts": {
-    "dev":"nodemon ./src/index.js"
+    "dev": "nodemon ./src/index.js"
   },
   "repository": {
     "type": "git",
@@ -14,7 +14,6 @@
     "culture",
     "society",
     "leadership"
-    
   ],
   "author": "francinemadoh@gmail.com",
   "license": "ISC",
@@ -23,6 +22,8 @@
   },
   "homepage": "https://github.com/FrancineMADOH/collmag#readme",
   "dependencies": {
+    "body-parser": "^1.19.0",
+    "cookie-parser": "^1.4.5",
     "ejs": "^3.1.6",
     "express": "^4.17.1",
     "mongoose": "^5.12.12"
