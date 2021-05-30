@@ -2,7 +2,7 @@ const path = require('path')
 const express = require('express')
 const mongoose = require('mongoose')
 const cookieParser = require('cookie-parser')
-//const bodyParser = require('body-parser')
+const bodyParser = require('body-parser')
 require('./mongoose')
 const port = process.env.PORT || 3000
 
