@@ -2,9 +2,14 @@ const express = require('express')
 const router = new express.Router()
 const Users = require('../models/usersModel')
 
-//setting up routes for users
-router.get('/',(req,res)=>{
-    res.send('hello users')
+//creating users
+router.post('/',(req,res)=>{
+    const user = new Users(req.body)
+    user.save().then(()=>{
+        res.send(user)
+    }).catch((e)=>{
+        res.status(400).send(e)
+    })
 })
 
 module.exports = router

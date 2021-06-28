@@ -12,7 +12,7 @@ const Users = mongoose.model('Users',{
         type:String,
         trim:true,
         lowerCase:true,
-        validate(value){
+        validator(value){
             if(validator.isEmail(value)){
                 throw new Error('Please provide a valid email')
             }
@@ -21,7 +21,7 @@ const Users = mongoose.model('Users',{
     password:{
         required:true,
         type: String,
-        maxlength:8,
+        minlength:8,
         trim:true,
         validate(value){
             if(value.toLowerCase().includes('password')){

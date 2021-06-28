@@ -21,10 +21,8 @@ app.set('views', path.join(__dirname,'../views/'))
 app.use(express.urlencoded({extended:false}))
 app.use(cookieParser())
 
-
-app.get('/users', (req,res)=>{
-    const user = new Users(req.body)
-    res.send(user)
+app.get('/', (req,res)=>{
+    res.send('Our awesome magazine')
 })
 
 app.listen(port, ()=>{
