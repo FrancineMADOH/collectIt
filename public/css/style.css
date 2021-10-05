@@ -88,6 +88,12 @@ i{
 .signin-form{
     margin:0 auto;
     max-width: 40%;
-    border:solid 0.5px #444;
+    border:solid 0.5px #777;
+    border-radius: 20px;
+}
+.signup-form{
+    margin:0 auto;
+    max-width: 40%;
+    border:solid 0.5px #777;
     border-radius: 20px;
 }
