@@ -85,3 +85,9 @@ i{
     font-weight: bold;
     color: #fff;
 }
+.signin-form{
+    margin:0 auto;
+    max-width: 40%;
+    border:solid 0.5px #444;
+    border-radius: 20px;
+}

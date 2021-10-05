@@ -22,7 +22,7 @@ app.use(express.urlencoded({extended:false}))
 app.use(cookieParser())
 
 app.get('/', (req,res)=>{
-    res.render('index')
+    res.render('sign_in')
 })
 
 app.listen(port, ()=>{
