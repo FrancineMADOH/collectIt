@@ -22,7 +22,7 @@ app.use(express.urlencoded({extended:false}))
 app.use(cookieParser())
 
 app.get('/', (req,res)=>{
-    res.send('Our awesome magazine')
+    res.render('forget_password')
 })
 
 app.listen(port, ()=>{

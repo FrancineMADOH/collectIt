@@ -2,7 +2,7 @@ const mongoose = require('mongoose')
 const validator = require('validator')
 
 const Users = mongoose.model('Users',{
-    name:{
+    username:{
         required:true,
         type:String,
         trim:true
@@ -30,7 +30,10 @@ const Users = mongoose.model('Users',{
         
         }
     },
-    role:{}
+    isSuperUser:{
+        type: Boolean,
+        default:false
+    }
 })
 
 module.exports = Users
