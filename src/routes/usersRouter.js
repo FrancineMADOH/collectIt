@@ -17,7 +17,7 @@ router.get('/sign_up', (re,res)=>{
 })
 
 //signin route
-router.get('sign_in', (req,res)=>{
+router.get('/sign_in', (req,res)=>{
     res.render('sign_in')
 })
 
