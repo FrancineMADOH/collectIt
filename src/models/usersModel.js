@@ -30,9 +30,8 @@ const Users = mongoose.model('Users',{
         
         }
     },
-    isSuperUser:{
-        type: Boolean,
-        default:false
+    role:{
+        type: String,
     }
 })
 
