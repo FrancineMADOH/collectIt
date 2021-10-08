@@ -22,7 +22,7 @@ app.use(express.urlencoded({extended:false}))
 app.use(cookieParser())
 
 app.get('/', (req,res)=>{
-    res.render('forget_password')
+    //res.render('sign_up')
 })
 
 app.listen(port, ()=>{
