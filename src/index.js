@@ -3,6 +3,7 @@ const express = require('express')
 const mongoose = require('mongoose')
 const cookieParser = require('cookie-parser')
 const bodyParser = require('body-parser')
+const bcrypt = require('bcrypt')
 require('./mongoose')
 const Posts = require('./models/postsModel')
 const Users = require('./models/usersModel')
@@ -24,6 +25,14 @@ app.use(cookieParser())
 app.get('/', (req,res)=>{
     //res.render('sign_up')
 })
+// const funcpas = async()=>{
+//     const pw = 'mylove'
+//     const has = await bcrypt.hash(pw,10)
+//     console.log(has);
+//     console.log(pw);
+// }
+
+// funcpas()
 
 app.listen(port, ()=>{
     console.log('listening on port ' + port)

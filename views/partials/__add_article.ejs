@@ -1,7 +1,7 @@
     <div class="form-group">
         <div class="form-group">
             <label for="category">Category</label>
-            <select class="form-control" id="category">
+            <select class="form-control" id="category" name="category">
               <option>Culture</option>
               <option>Leadership</option>
               <option>Societe</option>              
@@ -10,24 +10,24 @@
 
     <div class="form-group">
       <label for="title">Post Title</label>
-      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="titleHelp">
+      <input name="title" required value="<%- post.title %>" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="titleHelp">
     </div>
 
     <div class="form-group">
         <label for="description">Post Description</label>
-        <input type="text" class="form-control" id="description" aria-describedby="descriptionHelp">
+        <input type="text" required name="description" value="<%- post.description %>" class="form-control" id="description" aria-describedby="descriptionHelp">
         <small id="postHelp" class="form-text text-muted">The description shoud be at  most 100 words.</small>
     </div>
 
     <div class="form-group">
         <label for="content">Post Content</label>
-        <textarea type="content" class="form-control" id="content" aria-describedby="contentHelp"></textarea>
+        <textarea type="content" required name="content" class="form-control" id="content" aria-describedby="contentHelp"><%- post.content %></textarea>
         <small id="contentHelp" class="form-text text-muted">Please make sure your content is free of mistakes</small>
     </div>
     <div></div>
     <a class="btn btn-info custom"> Upload Post Image</a>
-    <small id="image help" class="form-text text-muted">Your Image should'nt be more than 4 MB</small>
+    <small id="image help" name="image" class="form-text text-muted">Your Image should'nt be more than 4 MB</small>
      </div>
 
     <button type="submit" class="btn custom">Post</button>
-    <button type="" class="btn btn-secondary">Cancel</button>
+    <a href="/posts" class="btn btn-secondary">Cancel</a>
