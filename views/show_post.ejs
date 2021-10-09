@@ -17,12 +17,21 @@
 <body>
     <header><%- include('./partials/__header.ejs')%></header>   
     <main  class="show-post-page">
-        <h2 class="text-center text-uppercase post-title"><%- post.title  %>  </h2>
-        <p class="text-muted">
-            Published at: <%- post.publishedAt.toLocaleDateString() %> 
-            <span>Category: <%- post.category  %>  </span>
-            <span>Author: <%-  %>  </span> 
-        </p> 
+        <div class="article-details mt-5 text-center">
+            <h2 class="text-center text-uppercase post-title"><%- post.title  %>  </h2>
+                <div class="text-muted d-flex justify-content-center">
+                    <p class="mx-5">Published at:   <%- post.publishedAt.toLocaleDateString() %></p> 
+                    <p class="mx-5">Category:    <%- post.category  %>  </p>
+                    <p class="mx-5">Author: <%-  %>  </p> 
+                </div> 
+                <p>
+                    <a class="btn btn-secondary" href="edit_post" >Edit</a>
+                    <a class="btn btn-info" href="/posts" >All Posts</a>
+                </p>
+        </div>
+        <div class="content container p-5 mt-5">
+            <%- post.content  %> 
+        </div>
         
     </main>
     <footer><%- include('./partials/__footer.ejs') %></footer>

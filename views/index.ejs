@@ -18,11 +18,12 @@
     <header><%- include('./partials/__header.ejs')%></header>
     <div class="page-banner">
         <h2 class="text-center text-uppercase post-title"><%- post.title  %>  </h2>
-        <ul class="banner-links">
-        <li>Published at: <%- post.publishedAt.toLocaleDateString() %>  </li>
-        <li>Category: <%- post.category  %>  </li>
-        <li>Author: <%-  %>  </li>
-        </ul>
+        <div class="text-muted d-flex justify-content-center">
+            <p class="mx-5">Published at:   <%- post.publishedAt.toLocaleDateString() %></p> 
+            <p class="mx-5">Category:    <%- post.category  %>  </p>
+            <p class="mx-5">Author: <%-  %>  </p> 
+        </div>
+        <!-- rajouter un formulaire de recherche sur cette page-->
     </div>
     <main  class="post-page">
         <div class="row">
