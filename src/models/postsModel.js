@@ -1,6 +1,6 @@
 const mongoose  = require("mongoose");
 const validator = require('validator')
-const Posts = mongoose.model('Posts',{
+const Posts = new mongoose.model('Posts',{
     title:{
         required: true,
         type:String,
@@ -11,7 +11,11 @@ const Posts = mongoose.model('Posts',{
         maxlength: 100,
         trim:true
     },
-    category:{},
+    category:{
+        required: true,
+        type:String,
+        trim:true
+    },
     content:{
         type: String,
         required: true,
@@ -21,15 +25,14 @@ const Posts = mongoose.model('Posts',{
     publishedAt:{
         required:true,
         type: Date,
-        default: Date.now()
-
+        default: new Date()
     },
     image:{
-        required:true,
+        //required:true,
         type:Buffer
     },
     author:{
-        required:true,
+        //required:true,
         type:String
     }
 })

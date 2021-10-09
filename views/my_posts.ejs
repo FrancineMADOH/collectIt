@@ -12,24 +12,42 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> 
     <link rel="stylesheet" href="/css/style.css">
-    <title>Sign-up</title>
+    <title>New Post</title>
 </head>
 <body>
     <main class="mypasts_page mb-4">
-        <h3 class="text-center mb-4"> Welcome $User_name!!!</h2>
+        <div class="mt-5 d-flex justify-content-between">
+            <h3 class="mb-4"> Welcome <a href="/users/profile"> $User_name!!!</a></h2>
+            <p><a href="posts/new_post" class="btn btn-secondary custom ">new article</a></p>
+        </div>
             <div class="col-lg-12">
-                <div class="search col-lg-4">
+                <div class="search">
                     <form action="">
                         <label for="search" class="form-label">Search</label>
                         <input type="text" name="searchterm" id="searchterm">
-                        <a href="" class="btn btn-secondary custom">Rechercher</a>
+                        <button class="btn btn-secondary custom">Rechercher</button>
                     </form>
                 </div>
-                <div class="allposts col-lg-4">
-                    <a href="" class="btn btn-secondary custom">All my Posts</a>
-                </div>
-                <div class="profile col-lg-4">
-                    <h4>My profile</h4>
+                <div class="all_post">
+                    <% posts.forEach(post => { %> 
+                        <div class="card mt-4">
+                            <img src="/images/plan.jpg" class="card-img-top" style="height:250px" alt=" Post Illustration">
+                            <div class="card-body">
+                              <h5 class="card-title text-uppercase"><%- post.title %></h5>
+                              <h6 class="card-subtitle mb-2 text-muted">
+                                  <%- post.publishedAt %>
+                                   || by:@sophiaKendrick <%-  %> 
+                                   || in: <%- post.category %> 
+                                 </h6>
+                              <p class="card-text"><%- post.description %></p>
+                              <a href="#" class="card-link btn custom">Read More</a>
+                              <a href="#" class="card-link btn btn-secondary"> Edit</a>
+                              <a href="#" class="card-link btn btn-danger">Delete</a>
+                            </div>
+                          </div>
+                        
+                    <% }) %>
+                     
                 </div>
             </div>
     </main>

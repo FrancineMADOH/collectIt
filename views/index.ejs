@@ -17,31 +17,26 @@
 <body>
     <header><%- include('./partials/__header.ejs')%></header>
     <div class="page-banner">
-        <h2 class="text-center post-title"> Why you should challenge yourself</h2>
+        <h2 class="text-center text-uppercase post-title"><%- post.title  %>  </h2>
         <ul class="banner-links">
-        <li>Published at: </li>
-        <li>Author: </li>
-        <li>Category: </li>
+        <li>Published at: <%- post.publishedAt.toLocaleDateString() %>  </li>
+        <li>Category: <%- post.category  %>  </li>
+        <li>Author: <%-  %>  </li>
         </ul>
     </div>
     <main  class="post-page">
         <div class="row">
             <div class="col-lg-10" >
                 <div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae recusandae repellendus delectus eligendi nihil pariatur tempore repudiandae ratione consectetur omnis quaerat, totam natus illo dignissimos fugiat, incidunt at esse unde! </p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae recusandae repellendus delectus eligendi nihil pariatur tempore repudiandae ratione consectetur omnis quaerat, totam natus illo dignissimos fugiat, incidunt at esse unde! </p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae recusandae repellendus delectus eligendi nihil pariatur tempore repudiandae ratione consectetur omnis quaerat, totam natus illo dignissimos fugiat, incidunt at esse unde! </p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae recusandae repellendus delectus eligendi nihil pariatur tempore repudiandae ratione consectetur omnis quaerat, totam natus illo dignissimos fugiat, incidunt at esse unde! </p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae recusandae repellendus delectus eligendi nihil pariatur tempore repudiandae ratione consectetur omnis quaerat, totam natus illo dignissimos fugiat, incidunt at esse unde! </p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae recusandae repellendus delectus eligendi nihil pariatur tempore repudiandae ratione consectetur omnis quaerat, totam natus illo dignissimos fugiat, incidunt at esse unde! </p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae recusandae repellendus delectus eligendi nihil pariatur tempore repudiandae ratione consectetur omnis quaerat, totam natus illo dignissimos fugiat, incidunt at esse unde! </p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae recusandae repellendus delectus eligendi nihil pariatur tempore repudiandae ratione consectetur omnis quaerat, totam natus illo dignissimos fugiat, incidunt at esse unde! </p>
+                    <%- post.content %> 
                 </div>
                 <div class="comment-section">
                     <h3 class="text-center">Add a Comment</h3>
                     <%- include('./partials/__addcomment.ejs') %>
                 </div>
-                <div class="comment-list"></div>
+                <div class="comment-list mt-5">
+                    <%- include('./partials/__comment.ejs')%>
+                </div>
             </div>
             <div class="col-lg-2" >
                 <div>
@@ -83,9 +78,6 @@
             </div>
         </div>
     </main>
-    <div>
-        <%- include('./partials/__comment.ejs')%>
-    </div>
     <footer><%- include('./partials/__footer.ejs') %></footer>
 <script src="/js/app.js"></script>
 </body>

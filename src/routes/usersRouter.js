@@ -50,16 +50,24 @@ router.post('sign_up', (req,res)=>{
 })
 
 //reading a single user
-router.get('/:id', async (req,res)=>{
-    const _id = req.params.id
+// router.get('/:id', async (req,res)=>{
+//     const _id = req.params.id
+//     try{
+//         const user = await Users.findById(_id)
+//         //the user might not exist
+//         if(!user){
+//             res.status(404).send()
+//         }
+//     }catch(e){
+//         res.status(500).send(e)
+//     }
+// })
+//reading a single user profile
+router.get('/profile', async(req,res)=>{
     try{
-        const user = await Users.findById(_id)
-        //the user might not exist
-        if(!user){
-            res.status(404).send()
-        }
-    }catch(e){
-        res.status(500).send(e)
+        res.render('profile')
+    } catch(e){
+        res.status(404).send(e)
     }
 })
 
