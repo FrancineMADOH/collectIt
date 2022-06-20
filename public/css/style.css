@@ -1,6 +1,12 @@
 body{
     font-family: 'Raleway', sans-serif;
 }
+.main-title{
+    color: #a389ad;
+    font-weight: bold;
+    margin: 5%;
+    font-size: 2em;
+}
 
 /*styling the header*/
 nav{
@@ -13,6 +19,7 @@ nav{
     background-color: #a389ad;
     color: white;
 }
+
 h3{
     color: #a389ad;
     font-weight: bold;
@@ -31,7 +38,6 @@ footer{
     color: #fff;
     font-weight: 600;
     padding: 5px;
-    max-width: 100%;
 }
 footer ul{
     display: flex;
