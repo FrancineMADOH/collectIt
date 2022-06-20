@@ -23,7 +23,7 @@ app.use(express.urlencoded({extended:false}))
 app.use(cookieParser())
 
 app.get('/', (req,res)=>{
-    //res.render('sign_up')
+    res.render('index')
 })
 // const funcpas = async()=>{
 //     const pw = 'mylove'
